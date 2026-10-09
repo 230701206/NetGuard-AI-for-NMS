@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-50 text-gray-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-primary-100 rounded-lg border border-primary-300 p-6 shadow-lg;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+
+  .btn-danger {
+    @apply bg-danger-500 hover:bg-danger-600 text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+
+  .btn-warning {
+    @apply bg-warning-500 hover:bg-warning-600 text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+
+  .badge-critical {
+    @apply bg-danger-500 text-white text-xs font-bold px-2 py-1 rounded;
+  }
+
+  .badge-error {
+    @apply bg-danger-600 text-white text-xs font-bold px-2 py-1 rounded;
+  }
+
+  .badge-warning {
+    @apply bg-warning-500 text-white text-xs font-bold px-2 py-1 rounded;
+  }
+
+  .badge-info {
+    @apply bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded;
+  }
+
+  .status-online {
+    @apply text-accent-500;
+  }
+
+  .status-warning {
+    @apply text-warning-500;
+  }
+
+  .status-offline {
+    @apply text-danger-500;
+  }
+
+  .status-critical {
+    @apply text-danger-600;
+  }
+}
